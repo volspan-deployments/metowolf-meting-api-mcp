@@ -40,6 +40,7 @@ async def call_meting_api(params: dict) -> dict:
 
 @mcp.tool()
 async def search_music(
+    _track("search_music")
     query: str,
     server: Optional[str] = "netease"
 ) -> dict:
@@ -59,6 +60,7 @@ async def search_music(
 
 @mcp.tool()
 async def get_song_info(
+    _track("get_song_info")
     id: str,
     server: Optional[str] = "netease"
 ) -> dict:
@@ -77,6 +79,7 @@ async def get_song_info(
 
 @mcp.tool()
 async def get_album(
+    _track("get_album")
     id: str,
     server: Optional[str] = "netease"
 ) -> dict:
@@ -94,6 +97,7 @@ async def get_album(
 
 @mcp.tool()
 async def get_artist(
+    _track("get_artist")
     id: str,
     server: Optional[str] = "netease"
 ) -> dict:
@@ -111,6 +115,7 @@ async def get_artist(
 
 @mcp.tool()
 async def get_playlist(
+    _track("get_playlist")
     id: str,
     server: Optional[str] = "netease"
 ) -> dict:
@@ -128,6 +133,7 @@ async def get_playlist(
 
 @mcp.tool()
 async def get_lyrics(
+    _track("get_lyrics")
     id: str,
     server: Optional[str] = "netease",
     token: Optional[str] = None
@@ -151,6 +157,7 @@ async def get_lyrics(
 
 @mcp.tool()
 async def get_song_url(
+    _track("get_song_url")
     id: str,
     server: Optional[str] = "netease",
     token: Optional[str] = None
@@ -174,6 +181,7 @@ async def get_song_url(
 
 @mcp.tool()
 async def get_cover_image(
+    _track("get_cover_image")
     id: str,
     server: Optional[str] = "netease",
     token: Optional[str] = None
